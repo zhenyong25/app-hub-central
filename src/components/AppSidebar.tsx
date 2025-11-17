@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Wrench, Train, Cloud, MessageSquare, ChevronDown } from "lucide-react";
+import { Wrench, Train, Cloud, MessageSquare, ChevronDown, Eye, MapPin } from "lucide-react";
 import {
   Sidebar,
   SidebarContent,
@@ -38,6 +38,8 @@ const categories: Category[] = [
       { title: "User Directory", id: "user-directory" },
       { title: "Document Center", id: "document-center" },
       { title: "Analytics Dashboard", id: "analytics-dashboard" },
+      { title: "FOCAL", id: "focal" },
+      { title: "OpsInsight", id: "ops-insight" },
     ]
   },
   { 
@@ -49,6 +51,26 @@ const categories: Category[] = [
       { title: "CCL", id: "tfms-ccl" },
       { title: "NEL", id: "tfms-nel" },
       { title: "DTL", id: "tfms-dtl" },
+      { title: "TEL", id: "tfms-tel" },
+    ]
+  },
+  { 
+    title: "Overwatch", 
+    icon: Eye, 
+    id: "overwatch",
+    subItems: [
+      { title: "NSEWL", id: "overwatch-nsewl" },
+      { title: "CCL", id: "overwatch-ccl" },
+      { title: "TEL", id: "overwatch-tel" },
+    ]
+  },
+  { 
+    title: "GIS", 
+    icon: MapPin, 
+    id: "gis",
+    subItems: [
+      { title: "GIS Local", id: "gis-local" },
+      { title: "GIS MYSG", id: "gis-mysg" },
     ]
   },
   { 
