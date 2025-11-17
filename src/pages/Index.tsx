@@ -13,7 +13,11 @@ import {
   Shield,
   Mail,
   Calendar,
-  MessageSquare
+  MessageSquare,
+  Eye,
+  MapPin,
+  Globe,
+  TrendingUp
 } from "lucide-react";
 
 const Index = () => {
@@ -75,6 +79,24 @@ const Index = () => {
                     environment="production"
                   />
                 </div>
+                <div id="focal">
+                  <AppCard
+                    name="FOCAL"
+                    description="Operational coordination and logistics"
+                    icon={TrendingUp}
+                    url="https://focal.example.com"
+                    environment="production"
+                  />
+                </div>
+                <div id="ops-insight">
+                  <AppCard
+                    name="OpsInsight"
+                    description="Operational analytics and insights"
+                    icon={BarChart3}
+                    url="https://opsinsight.example.com"
+                    environment="production"
+                  />
+                </div>
               </CategorySection>
             </div>
 
@@ -88,6 +110,7 @@ const Index = () => {
                     icon={Train}
                     url="https://tfms-nsewl.example.com"
                     environment="production"
+                    iconColor="nsewl-red"
                   />
                 </div>
                 <div id="tfms-ccl">
@@ -97,6 +120,7 @@ const Index = () => {
                     icon={Train}
                     url="https://tfms-ccl.example.com"
                     environment="production"
+                    iconColor="ccl-orange"
                   />
                 </div>
                 <div id="tfms-nel">
@@ -114,6 +138,76 @@ const Index = () => {
                     description="Downtown Line fleet management"
                     icon={Train}
                     url="https://tfms-dtl.example.com"
+                    environment="production"
+                  />
+                </div>
+                <div id="tfms-tel">
+                  <AppCard
+                    name="TFMS TEL"
+                    description="Thomson-East Coast Line fleet management"
+                    icon={Train}
+                    url="https://tfms-tel.example.com"
+                    environment="production"
+                    iconColor="tel-brown"
+                  />
+                </div>
+              </CategorySection>
+            </div>
+
+            {/* Overwatch Category */}
+            <div id="overwatch">
+              <CategorySection title="Overwatch - Real-time Monitoring">
+                <div id="overwatch-nsewl">
+                  <AppCard
+                    name="Overwatch NSEWL"
+                    description="Real-time monitoring for NSEWL"
+                    icon={Eye}
+                    url="https://overwatch-nsewl.example.com"
+                    environment="production"
+                    iconColor="nsewl-red"
+                  />
+                </div>
+                <div id="overwatch-ccl">
+                  <AppCard
+                    name="Overwatch CCL"
+                    description="Real-time monitoring for CCL"
+                    icon={Eye}
+                    url="https://overwatch-ccl.example.com"
+                    environment="production"
+                    iconColor="ccl-orange"
+                  />
+                </div>
+                <div id="overwatch-tel">
+                  <AppCard
+                    name="Overwatch TEL"
+                    description="Real-time monitoring for TEL"
+                    icon={Eye}
+                    url="https://overwatch-tel.example.com"
+                    environment="production"
+                    iconColor="tel-brown"
+                  />
+                </div>
+              </CategorySection>
+            </div>
+
+            {/* GIS Category */}
+            <div id="gis">
+              <CategorySection title="GIS - Geographic Information System">
+                <div id="gis-local">
+                  <AppCard
+                    name="GIS Local"
+                    description="Local geographic information system"
+                    icon={MapPin}
+                    url="https://gis-local.example.com"
+                    environment="production"
+                  />
+                </div>
+                <div id="gis-mysg">
+                  <AppCard
+                    name="GIS MYSG"
+                    description="MySG geographic information system"
+                    icon={Globe}
+                    url="https://gis-mysg.example.com"
                     environment="production"
                   />
                 </div>

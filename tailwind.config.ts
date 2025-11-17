@@ -21,6 +21,11 @@ export default {
         foreground: "hsl(var(--foreground))",
         "app-card-hover": "hsl(var(--app-card-hover))",
         "category-bg": "hsl(var(--category-bg))",
+        "nsewl-red": "hsl(var(--nsewl-red))",
+        "nsewl-green": "hsl(var(--nsewl-green))",
+        "ccl-orange": "hsl(var(--ccl-orange))",
+        "tel-brown": "hsl(var(--tel-brown))",
+        "default-app": "hsl(var(--default-app))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
