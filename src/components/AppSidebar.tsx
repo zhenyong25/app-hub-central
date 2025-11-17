@@ -1,5 +1,13 @@
 import { useState } from "react";
-import { Wrench, Train, Cloud, MessageSquare, ChevronDown, Eye, MapPin } from "lucide-react";
+import {
+  Wrench,
+  Train,
+  Cloud,
+  MessageSquare,
+  ChevronDown,
+  Eye,
+  MapPin,
+} from "lucide-react";
 import {
   Sidebar,
   SidebarContent,
@@ -14,7 +22,11 @@ import {
   SidebarMenuSubButton,
   useSidebar,
 } from "@/components/ui/sidebar";
-import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "@/components/ui/collapsible";
 
 interface SubItem {
   title: string;
@@ -29,69 +41,70 @@ interface Category {
 }
 
 const categories: Category[] = [
-  { 
-    title: "Internal Tools", 
-    icon: Wrench, 
+  {
+    title: "Internal Tools",
+    icon: Wrench,
     id: "internal-tools",
     subItems: [
-      { title: "Admin Portal", id: "admin-portal" },
-      { title: "User Directory", id: "user-directory" },
-      { title: "Document Center", id: "document-center" },
-      { title: "Analytics Dashboard", id: "analytics-dashboard" },
-      { title: "FOCAL", id: "focal" },
-      { title: "OpsInsight", id: "ops-insight" },
-    ]
+      { title: "False God", id: "False God" },
+      { title: "PDF Center", id: "PDF Center" },
+      { title: "Uptime Kuma", id: "Uptime Kuma" },
+    ],
   },
-  { 
-    title: "TFMS", 
-    icon: Train, 
-    id: "tfms",
-    subItems: [
-      { title: "NSEWL", id: "tfms-nsewl" },
-      { title: "CCL", id: "tfms-ccl" },
-      { title: "NEL", id: "tfms-nel" },
-      { title: "DTL", id: "tfms-dtl" },
-      { title: "TEL", id: "tfms-tel" },
-    ]
-  },
-  { 
-    title: "Overwatch", 
-    icon: Eye, 
+  {
+    title: "Overwatch",
+    icon: Eye,
     id: "overwatch",
     subItems: [
       { title: "NSEWL", id: "overwatch-nsewl" },
       { title: "CCL", id: "overwatch-ccl" },
       { title: "TEL", id: "overwatch-tel" },
-    ]
+      { title: "NSEWL Staging", id: "overwatch-nsewl-staging" },
+      { title: "CCL Staging", id: "overwatch-ccl-staging" },
+      { title: "TEL Staging", id: "overwatch-tel-staging" },
+    ],
   },
-  { 
-    title: "GIS", 
-    icon: MapPin, 
+  {
+    title: "TFMS",
+    icon: Train,
+    id: "tfms",
+    subItems: [
+      { title: "NSEWL", id: "tfms-nsewl" },
+      { title: "CCL", id: "tfms-ccl" },
+      { title: "NSEWL Staging", id: "tfms-nsewl-staging" },
+      { title: "CCL Staging", id: "tfms-ccl-staging" },
+    ],
+  },
+
+  {
+    title: "GIS",
+    icon: MapPin,
     id: "gis",
     subItems: [
       { title: "GIS Local", id: "gis-local" },
-      { title: "GIS MYSG", id: "gis-mysg" },
-    ]
+      { title: "GIS RTS", id: "gis-rts" },
+      { title: "GIS Local (v2)", id: "gis-local-v2" },
+    ],
   },
-  { 
-    title: "External Services", 
-    icon: Cloud, 
-    id: "external-services",
+  {
+    title: "OpsInsight",
+    icon: Cloud,
+    id: "ops-insight",
     subItems: [
-      { title: "Cloud Storage", id: "cloud-storage" },
-      { title: "Project Management", id: "project-management" },
-      { title: "Security Portal", id: "security-portal" },
-      { title: "Email System", id: "email-system" },
-    ]
+      { title: "OpsInsight", id: "ops-insight" },
+      { title: "OpsInsight Staging", id: "ops-insight-staging" },
+    ],
   },
-  { 
-    title: "Communication", 
-    icon: MessageSquare, 
-    id: "communication",
+  {
+    title: "Other Apps",
+    icon: MessageSquare,
+    id: "other-apps",
     subItems: [
-      { title: "Calendar", id: "calendar" },
-      { title: "Team Chat", id: "team-chat" },
-    ]
+      { title: "FOCAL", id: "focal" },
+      { title: "Optimus", id: "optimus" },
+      { title: "RSMap", id: "rsmap" },
+      { title: "OCC Apps", id: "occ-apps" },
+    ],
   },
 ];
 
@@ -107,9 +120,9 @@ export function AppSidebar() {
   };
 
   const toggleCategory = (categoryId: string) => {
-    setOpenCategories(prev => 
-      prev.includes(categoryId) 
-        ? prev.filter(id => id !== categoryId)
+    setOpenCategories((prev) =>
+      prev.includes(categoryId)
+        ? prev.filter((id) => id !== categoryId)
         : [...prev, categoryId]
     );
   };
