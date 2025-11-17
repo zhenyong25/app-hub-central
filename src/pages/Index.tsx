@@ -39,122 +39,150 @@ const Index = () => {
             {/* Internal Tools Category */}
             <div id="internal-tools">
               <CategorySection title="Internal Tools">
-                <AppCard
-                  name="Admin Portal"
-                  description="System administration and user management"
-                  icon={Settings}
-                  url="https://admin.example.com"
-                  environment="production"
-                />
-                <AppCard
-                  name="User Directory"
-                  description="Company-wide user directory and profiles"
-                  icon={Users}
-                  url="https://directory.example.com"
-                  environment="production"
-                />
-                <AppCard
-                  name="Document Center"
-                  description="Centralized document repository"
-                  icon={FileText}
-                  url="https://docs.example.com"
-                  environment="staging"
-                />
-                <AppCard
-                  name="Analytics Dashboard"
-                  description="Business intelligence and reporting"
-                  icon={BarChart3}
-                  url="https://analytics.example.com"
-                  environment="production"
-                />
+                <div id="admin-portal">
+                  <AppCard
+                    name="Admin Portal"
+                    description="System administration and user management"
+                    icon={Settings}
+                    url="https://admin.example.com"
+                    environment="production"
+                  />
+                </div>
+                <div id="user-directory">
+                  <AppCard
+                    name="User Directory"
+                    description="Company-wide user directory and profiles"
+                    icon={Users}
+                    url="https://directory.example.com"
+                    environment="production"
+                  />
+                </div>
+                <div id="document-center">
+                  <AppCard
+                    name="Document Center"
+                    description="Centralized document repository"
+                    icon={FileText}
+                    url="https://docs.example.com"
+                    environment="staging"
+                  />
+                </div>
+                <div id="analytics-dashboard">
+                  <AppCard
+                    name="Analytics Dashboard"
+                    description="Business intelligence and reporting"
+                    icon={BarChart3}
+                    url="https://analytics.example.com"
+                    environment="production"
+                  />
+                </div>
               </CategorySection>
             </div>
 
             {/* TFMS Category */}
             <div id="tfms">
               <CategorySection title="TFMS - Train Fleet Management System">
-                <AppCard
-                  name="TFMS NSEWL"
-                  description="North-South East-West Line fleet management"
-                  icon={Train}
-                  url="https://tfms-nsewl.example.com"
-                  environment="production"
-                />
-                <AppCard
-                  name="TFMS CCL"
-                  description="Circle Line fleet management"
-                  icon={Train}
-                  url="https://tfms-ccl.example.com"
-                  environment="production"
-                />
-                <AppCard
-                  name="TFMS NEL"
-                  description="North East Line fleet management"
-                  icon={Train}
-                  url="https://tfms-nel.example.com"
-                  environment="staging"
-                />
-                <AppCard
-                  name="TFMS DTL"
-                  description="Downtown Line fleet management"
-                  icon={Train}
-                  url="https://tfms-dtl.example.com"
-                  environment="production"
-                />
+                <div id="tfms-nsewl">
+                  <AppCard
+                    name="TFMS NSEWL"
+                    description="North-South East-West Line fleet management"
+                    icon={Train}
+                    url="https://tfms-nsewl.example.com"
+                    environment="production"
+                  />
+                </div>
+                <div id="tfms-ccl">
+                  <AppCard
+                    name="TFMS CCL"
+                    description="Circle Line fleet management"
+                    icon={Train}
+                    url="https://tfms-ccl.example.com"
+                    environment="production"
+                  />
+                </div>
+                <div id="tfms-nel">
+                  <AppCard
+                    name="TFMS NEL"
+                    description="North East Line fleet management"
+                    icon={Train}
+                    url="https://tfms-nel.example.com"
+                    environment="staging"
+                  />
+                </div>
+                <div id="tfms-dtl">
+                  <AppCard
+                    name="TFMS DTL"
+                    description="Downtown Line fleet management"
+                    icon={Train}
+                    url="https://tfms-dtl.example.com"
+                    environment="production"
+                  />
+                </div>
               </CategorySection>
             </div>
 
             {/* External Services Category */}
             <div id="external-services">
               <CategorySection title="External Services">
-                <AppCard
-                  name="Cloud Storage"
-                  description="File storage and sharing platform"
-                  icon={Cloud}
-                  url="https://storage.example.com"
-                  environment="production"
-                />
-                <AppCard
-                  name="Project Management"
-                  description="Track projects and team collaboration"
-                  icon={Briefcase}
-                  url="https://projects.example.com"
-                  environment="production"
-                />
-                <AppCard
-                  name="Security Portal"
-                  description="Security monitoring and compliance"
-                  icon={Shield}
-                  url="https://security.example.com"
-                  environment="production"
-                />
-                <AppCard
-                  name="Email System"
-                  description="Corporate email and communications"
-                  icon={Mail}
-                  url="https://mail.example.com"
-                  environment="production"
-                />
+                <div id="cloud-storage">
+                  <AppCard
+                    name="Cloud Storage"
+                    description="File storage and sharing platform"
+                    icon={Cloud}
+                    url="https://storage.example.com"
+                    environment="production"
+                  />
+                </div>
+                <div id="project-management">
+                  <AppCard
+                    name="Project Management"
+                    description="Track projects and team collaboration"
+                    icon={Briefcase}
+                    url="https://projects.example.com"
+                    environment="production"
+                  />
+                </div>
+                <div id="security-portal">
+                  <AppCard
+                    name="Security Portal"
+                    description="Security monitoring and compliance"
+                    icon={Shield}
+                    url="https://security.example.com"
+                    environment="production"
+                  />
+                </div>
+                <div id="email-system">
+                  <AppCard
+                    name="Email System"
+                    description="Corporate email and communications"
+                    icon={Mail}
+                    url="https://mail.example.com"
+                    environment="production"
+                  />
+                </div>
               </CategorySection>
             </div>
 
             {/* Communication Tools Category */}
             <div id="communication">
               <CategorySection title="Communication Tools">
-                <AppCard
-                  name="Calendar"
-                  description="Shared calendars and scheduling"
-                  icon={Calendar}
-                  url="https://calendar.example.com"
-                  environment="production"
-                />
-                <AppCard
-                  name="Team Chat"
-                  description="Instant messaging and collaboration"
-                  icon={MessageSquare}
-                  url="https://chat.example.com"
-                  environment="staging"
-                />
+                <div id="calendar">
+                  <AppCard
+                    name="Calendar"
+                    description="Shared calendars and scheduling"
+                    icon={Calendar}
+                    url="https://calendar.example.com"
+                    environment="production"
+                  />
+                </div>
+                <div id="team-chat">
+                  <AppCard
+                    name="Team Chat"
+                    description="Instant messaging and collaboration"
+                    icon={MessageSquare}
+                    url="https://chat.example.com"
+                    environment="staging"
+                  />
+                </div>
               </CategorySection>
             </div>
           </main>
