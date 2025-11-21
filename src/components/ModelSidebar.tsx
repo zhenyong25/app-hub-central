@@ -17,12 +17,12 @@ interface ModelSidebarProps {
   onSelectModel: (path: string) => void;
 }
 
-// Example models - replace these with your actual .glb file paths
+// Example models - Place your .glb files in public/models/ folder
+// Update these paths to match your actual .glb filenames
 const exampleModels = [
-  { name: "Model 1", path: "/models/example1.glb", folder: "Folder A" },
-  { name: "Model 2", path: "/models/example2.glb", folder: "Folder A" },
-  { name: "Model 3", path: "/models/example3.glb", folder: "Folder B" },
-  { name: "Model 4", path: "/models/example4.glb", folder: "Folder B" },
+  { name: "Example Model 1", path: "/models/model1.glb", folder: "Folder A" },
+  { name: "Example Model 2", path: "/models/model2.glb", folder: "Folder A" },
+  { name: "Example Model 3", path: "/models/model3.glb", folder: "Folder B" },
 ];
 
 export function ModelSidebar({ onSelectModel }: ModelSidebarProps) {

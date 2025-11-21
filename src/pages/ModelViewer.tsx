@@ -42,8 +42,12 @@ export default function ModelViewer() {
 
           {!selectedModel && (
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-              <div className="text-center text-muted-foreground">
-                <p className="text-lg">Select a 3D model from the sidebar to view</p>
+              <div className="text-center text-muted-foreground max-w-md">
+                <p className="text-lg font-semibold mb-2">No model selected</p>
+                <p className="text-sm">Select a model from the sidebar or upload your own .glb file</p>
+                <p className="text-xs mt-4 text-muted-foreground/70">
+                  To add models: Place .glb files in public/models/ folder
+                </p>
               </div>
             </div>
           )}
